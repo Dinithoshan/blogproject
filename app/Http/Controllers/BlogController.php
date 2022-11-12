@@ -23,6 +23,7 @@ class BlogController extends Controller
     //retrive
     public function get(){
         //return User::all();
+        //hello bitch
         return Blog::where('published', true)->get();
     }
 
