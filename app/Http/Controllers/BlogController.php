@@ -23,12 +23,11 @@ class BlogController extends Controller
     //retrive
     public function get(){
         //return User::all();
-        //hello bitch
+        //hello bitch 2
         return Blog::where('published', true)->get();
     }
 
     //update
-
     public function update(Request $request, $id){
         $blog = Blog::find($id);
         $blog -> content= $request->content;
